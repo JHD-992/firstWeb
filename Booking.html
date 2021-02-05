@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags for bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--importing of jquery and jquery ui packages-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--link to the self created stylesheet-->
+    <link rel="stylesheet" href = "/Styles/Hobby.css" type = "text/css">
+    <!--Title of webpage + id attribute-->
+    <title id=bookingTitle>Kruger Camp Booking</title>
+</head>
+
+<body>
+
+  <!--page header-->
+  <h1 class="text-center">Booking Accomodation</h1>                                         
+
+  <!--page banner-->
+  <div class="banner"></div>                                                                
+  <!--header for form, centered via bootstrap class-->
+  <h4 class="text-center">Contact Details</h4>
+
+  <!--submit form for capturing contact information-->
+  <form class="text-center" action="">                                                      
+
+    <label for="firstName">First Name:</label><br>
+    <input type="text" id="firstName" name="firstName" value=""><br>
+    <label for="lastName">Last Name:</label><br>
+    <input type="text" id="lastName" name="lastName" value=""><br>
+    <label for="emailAddress">Email Address:</label><br>
+    <input type="text" id="emailAddress" name="emailAddress" value=""><br>
+    <label for="contactNr">Contact Number:</label><br>
+    <input type="text" id="contactNr" name="contactNr" value=""><br><br>
+    <input type="submit" value="Submit">
+
+  </form>
+
+  <h4 style="padding: 5px;">Camps of Interest</h4>
+
+  <!--radio button form for capturing camp of interest-->
+  <div class="float-start" style="padding: 5px;">
+    <form action="">                                                                                                            
+
+      <input type="radio" id="Berg-en-Dal" name="camp" value="Berg-en-Dal">
+      <label for="Berg-en-Dal">Berg-en-Dal</label><br>
+      <input type="radio" id="Letaba" name="camp" value="Letaba">
+      <label for="Letaba">Letaba</label><br>
+      <input type="radio" id="Mopani" name="camp" value="Mopani">
+      <label for="Mopani">Mopani</label><br>
+      <input type="radio" id="Orpen" name="camp" value="Orpen">
+      <label for="Orpen">Orpen</label><br>
+      <input type="radio" id="Punda Maria" name="camp" value="Punda Maria">
+      <label for="Punda Maria">Punda Maria</label><br>
+      <input type="radio" id="Shingwedzi" name="camp" value="Shingwedzi">
+      <label for="Shingwedzi">Shingwedzi</label><br>
+
+    </form>
+  </div>
+
+  <!--radio button form for capturing camp of interest-->
+  <div class="text-center" style="padding: 5px;">                                                                              
+    <form action="">                                                                                                          
+
+      <input type="radio" id="Crocodile Bridge" name="camp" value="Crocodile Bridge">
+      <label for="Crocodile Bridge">Crocodile Bridge</label><br>
+      <input type="radio" id="Lower Sabie" name="camp" value="Lower Sabie">
+      <label for="Lower Sabie">Lower Sabie</label><br>
+      <input type="radio" id="Olifants" name="camp" value="Olifants">
+      <label for="Olifants">Olifants</label><br>
+      <input type="radio" id="Pretoriuskop" name="camp" value="Pretoriuskop">
+      <label for="Pretoriuskop">Pretoriuskop</label><br>
+      <input type="radio" id="Satara" name="camp" value="Satara">
+      <label for="Satara">Satara</label><br>
+      <input type="radio" id="Skukuza" name="camp" value="Skukuza">
+      <label for="Skukuza">Skukuza</label><br>
+
+    </form>
+  </div>
+
+  <!--quote from Richard Mullins-->
+  <blockquote cite="Richard Mullins">                                                                                             
+    The only man I envy is the man who has not yet been to Africa - for he has so much to look forward to. - 
+    Richard Mullins
+  </blockquote>
+  
+<!--list for specifying important items-->
+<div id="packList">
+  <h5>We highly recommend packing the following items: </h5>                                                                          
+
+  <ul>
+    <li>Bug spray</li>
+    <li>Hat</li>
+    <li>Sunscreen</li>
+    <li>Binoculars</li>
+    <li>Sunglasses</li>
+  </ul>
+
+  <!--image to be used as a bookmark/save for later recall-->
+  <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+  <figcaption id = "bookmarkText">Save for later</figcaption>
+</div>
+
+  <!--Link to page with saved content-->
+  <a id="savedItems" class="link" target="_blank" href="Saved Items.html">Saved Content</a>
+
+  <!--link for returning to home page-->
+  <a class="link" href="index.html">Return to home page</a>                                                                       
+
+  <!--link to script file to be loaded once HTML is fully loaded.-->
+  <script type='text/javascript' src="JavaScript/Script.js"></script>
+</body>
+
+</html>

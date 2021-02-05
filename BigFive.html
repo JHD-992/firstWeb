@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags for bootstrap-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--importing of jquery and jquery ui packages-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+    <script src="http://code.jquery.com/ui/1.10.0/jquery-ui.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!--link to the self created stylesheet-->
+    <link rel="stylesheet" href = "/Styles/Hobby.css" type = "text/css">
+    <!--Title of webpage + id attribute-->
+    <title id=bigFiveTitle>Wildlife Viewing - The Big 5</title>
+</head>
+
+<body>
+
+    <!--Page heading-->
+    <h1 class="text-center">The Big 5</h1>                                                                              
+
+    <!--repeating image used for a page banner-->
+    <div class="banner"></div>                                                                                          
+
+    <!--Block for individual animal and its information. Formatted to start from left and have picture on right.-->
+    <div id="Elephant" class="animalInfo">                                                                              
+
+      <h4 id="ElephantHeader" class="animalHeaderLeft">Elephants - <small><em>Loxodonta africana</em></small></h4>
+
+      <p id="ElephantInfo" class="animalInfoLeft">
+        Elephants are the largest land mammal. The tallest can measure up to 3.3 meters at the shoulder and weigh up to 7 tons. They have
+        large ears which help them to regulate their body temperature. They are very sociable animals and live in groups with the exception being
+        large older bulls which are sometimes solitary. 
+        <br>
+        <br>
+        They can live to be around 70 years of age and there is a strong link between the condition
+        of their teeth and how old they can get. Their trunks are made up of hundreds of muscles have many uses. They use their trunks as a snorkel,
+        to pick things up and suck up, up to 8 litres of water.
+      </p>
+
+      <aside id="ElePicArea">
+        <img id = "ElephantPic" src="Images/BigFive/Elephant.jpg" width="400px">
+        <button type="button" id="charge">Charge</button>
+      </aside>
+
+      <!--image to be used as a bookmark/save for later recall-->
+      <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+      <figcaption id = "bookmarkText">Save for later</figcaption>
+
+      <!--radio buttons that will act as a like/dislike/meh tracker, styled via bootstrap for horizontal placement-->
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optLike" value = "Like">
+        <label class = "form-check-label" for = "optLike">Like</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optDislike" value = "Dislike">
+        <label class = "form-check-label" for = "optLike">Dislike</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optMeh" value = "Meh">
+        <label class = "form-check-label" for = "optLike">Meh</label>
+      </div>
+    </div>
+
+    <br>
+
+    <!-- block for animal information with picture on the left and writing follows-->
+    <div id="Lion" class="animalInfo">                                                                                  
+
+      <h4 id="LionHeader" class="animalHeaderRight">Lions - <small><em>Pantera leo</em></small></h4>
+      
+      <div id="LionPicArea" class="animalPicLeft">
+        <img id="LionPic" src="Images/BigFive/Lion.jpg" width="400px">
+      </div>
+
+      <aside id="LionInfo" class="animalInfoRight">
+        Lions are sexually dimorphic which means that males and females look noticeably different. Males are larger and can be up to two meters
+        long where as females reach 1.8 meters at most. Males also have a large main that makes them look even larger and offers protection in
+        territorial fights. They are the second largest of the big cats and the only big cats that live in social groups with females living
+        in prides. Males may form coalitions with other males or spend their lives as solitary individuals. Recent research shows that males home
+        ranges may overlap with the home range of multiple female prides.
+        <br>
+        <br>
+        While the average lifespan of lions in the harder natural environment is around 10 years they have been known to reach 22 years of age in
+        captivity. The reason for the decreased life expectancy in the wild is down to the injuries etc that can result from territorial battles
+        and hunting. In very rare cases animals with white coats are born.
+        <br>
+        <!--image to be used as a bookmark/save for later recall-->
+        <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+        <figcaption id = "bookmarkText">Save for later</figcaption>
+      
+
+      <!--radio buttons that will act as a like/dislike/meh tracker, styled via bootstrap for horizontal placement-->
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optLike" value = "Like">
+        <label class = "form-check-label" for = "optLike">Like</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optDislike" value = "Dislike">
+        <label class = "form-check-label" for = "optLike">Dislike</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optMeh" value = "Meh">
+        <label class = "form-check-label" for = "optLike">Meh</label>
+      </div>
+      </aside>
+
+    </div>
+
+    <br>
+
+    <!--Block for individual animal and its information. Formatted to start from left and have picture on right.-->
+    <div id="Rhino" class="animalInfo">                                                                                                
+
+      <h4 id="RhinoHeader" class="animalHeaderLeft">Rhinoceros: <small>White Rhino - <em>Ceratotherium simum</em> & Black Rhino - <em>Diceros bicornis</em></small></h4>
+
+      <p id="RhinoInfo" class="animalInfoLeft">
+        White rhinos, more accurately described as the square-lipped rhino, is considered to be the second largest land mammal after the elephant.
+        They can be up to 4 meters in length and up to 186cm at the shoulder. They can weigh up to 2.3 tons although records exist of individuals up
+        to 3.6 tons. They have large heads with characteristic wide, square lips. They have three toes on each foot and are predominantly grazers; they
+        eat mostly grass. They can live in groups of up to 14 animals although males are usually solitary. They can live to be up to 50 years old.
+        <br>
+        <br>
+        Black rhinos, also known as hook-lipped rhinos, are smaller than their wide-lipped cousins. They reach 180cm at the shoulder and can be up to 3.75 meters
+        long. They commonly weigh up to 1.5 tons although reports exist of unusually large males reaching 2.9 tons. The pointed lip is very dexturous and is used
+        to help when feeding. As opposed to white rhinos, black rhinos are mostly solitary by nature. They can also reach up to 50 years of age.
+
+      </p>
+
+      <aside id="RhinoPicArea">
+        <img id= "RhinoPic" src="Images/BigFive/Rhino.png" width="400px">
+      </aside>
+
+      <!--image to be used as a bookmark/save for later recall-->
+        <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+        <figcaption id = "bookmarkText">Save for later</figcaption>
+      
+      <!--radio buttons that will act as a like/dislike/meh tracker, styled via bootstrap for horizontal placement-->  
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optLike" value = "Like">
+        <label class = "form-check-label" for = "optLike">Like</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optDislike" value = "Dislike">
+        <label class = "form-check-label" for = "optLike">Dislike</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optMeh" value = "Meh">
+        <label class = "form-check-label" for = "optLike">Meh</label>
+      </div>
+      
+    </div>
+
+    <br>
+
+  <!-- block for animal information with picture on the left and writing follows-->
+  <div id="Leopard" class="animalInfo">                                                                                                   
+
+    <h4 id="LeopardHeader" class="animalHeaderRight">Leopards - <small><em>Pantera pardus</em></small></h4>
+      
+    <div id="LeopardPicArea" class="animalPicLeft">
+      <img id= "LeopardPic"src="Images/BigFive/Leopard.jpg" width="400px">
+    </div>
+
+    <aside id="LeopardInfo" class="animalInfoRight">
+        Males can weigh between 60 and 96kgs while females have an average maximum weight of around 40kgs. They are strongly territorial and live a
+        solitary lifestyle. They are very adept climbers and will often rest in trees. They also hoist their kills into the trees in efforts to protect
+        their meals from other animals. They are considered to be extremely strong for their relatively small size due to the ability to pull their large
+        prey animals into trees.
+      <br>
+      <br>
+        The average life expectancy of the leopard in the wild is 12 to 15 years and up to 23 years in captivity.
+      <br>
+
+      <!--image to be used as a bookmark/save for later recall-->
+      <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+      <figcaption id = "bookmarkText">Save for later</figcaption>
+      
+      <!--radio buttons that will act as a like/dislike/meh tracker, styled via bootstrap for horizontal placement-->
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optLike" value = "Like">
+        <label class = "form-check-label" for = "optLike">Like</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optDislike" value = "Dislike">
+        <label class = "form-check-label" for = "optLike">Dislike</label>
+      </div>
+      <div class = "form-check form-check-inline">
+        <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optMeh" value = "Meh">
+        <label class = "form-check-label" for = "optLike">Meh</label>
+      </div>
+    </aside>
+
+    </div>
+
+    <br>
+
+  <!--Block for individual animal and its information. Formatted to start from left and have picture on right.-->
+  <div id="Buffalo" class="animalInfo">                                                                                                                     
+
+    <h4 id="BuffaloHeader" class="animalHeaderLeft">Cape Buffalo - <small><em>Syncerus caffer</em></small></h4>
+
+    <p id="BuffaloInfo" class="animalInfoLeft">
+        They can reach up to 1.7m at the shoulder adn be up to 3.4 meters long. Large individuals regularly reach 1 ton in weight. They are well
+        known as dangerous animals due to their unpredicatble natures and are responisble for many human deaths every year. They are highly social
+        animals and congregate in herds. Some heards remain relatively small while others number in the hundreds.
+      <br>
+      <br>
+        They can be very aggresive animals when put under pressure while also being extremly protective of their herd members. Many records
+        exist of the herd defending injured members and attacking their predators.
+
+    </p>
+
+    <aside id="BuffaloPicArea">
+      <img id = "BuffaloPic" src="Images/BigFive/Buffalo.jfif" width="400px">
+    </aside>
+
+    <!--image to be used as a bookmark/save for later recall-->
+    <img id = "bookmark"  onclick="saveItem()" src = "Images/MainPage/Bookmark.png" height="25px">
+    <figcaption id = "bookmarkText">Save for later</figcaption>
+    
+    <!--radio buttons that will act as a like/dislike/meh tracker, styled via bootstrap for horizontal placement-->
+    <div class = "form-check form-check-inline">
+      <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optLike" value = "Like">
+      <label class = "form-check-label" for = "optLike">Like</label>
+    </div>
+    <div class = "form-check form-check-inline">
+      <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optDislike" value = "Dislike">
+      <label class = "form-check-label" for = "optLike">Dislike</label>
+    </div>
+    <div class = "form-check form-check-inline">
+      <input class = "form-check-input" type = "radio" name = "likeRadio" id = "optMeh" value = "Meh">
+      <label class = "form-check-label" for = "optLike">Meh</label>
+    </div>
+
+  </div>
+
+  <br>
+
+  <!--header for a comments section-->
+  <h4>Comments: </h4>
+  <!--form where username and comment may be added with a button that when stored outputs comment to parapgraph "comSec"-->
+  <form  action="">                                                      
+
+    <input type = "text" id = "comName" placeholder = "Enter Name"><br><br>
+    <textarea id = "comText" rows = "5" cols="50" placeholder = "Enter your comment"></textarea><br><br>
+    <input type = "button" value="Save" id = "btnSub">
+
+  </form>
+  <br>
+  <br>
+  <!--paragraph to be used to display submitted comment-->
+  <p id="ComSec"></p>
+
+  <!--Link to page with saved content-->
+  <a id="savedItems" class="link" target="_blank" href="Saved Items.html">Saved Content</a>
+
+  <!--link for returning to the home page-->
+  <a class="link" href="index.html">Return to home page</a>
+
+  <!--link to script file to be loaded once HTML is fully loaded.-->
+  <script type='text/javascript' src="JavaScript/Script.js"></script>
+</body>
+
+</html>

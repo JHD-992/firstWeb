@@ -1,0 +1,120 @@
+body {
+  background-color: #fcaf60;
+}
+
+blockquote {
+  background-color: #a88732;
+  border: 1px solid black;
+}
+
+.banner {
+  background: url(../Images/MainPage/SanparkLogo.jpg);
+  background-size: 3%;
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 50px;
+}
+
+#history {
+  display: -ms-grid;
+  display: grid;
+}
+
+#historyHeader {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  padding: 4px;
+}
+
+#historyInfo {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  padding: 4px;
+}
+
+#historyAside {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+  padding: 4px;
+}
+
+.link {
+  bottom: 0px;
+  text-align: center;
+  display: block;
+}
+
+.animalInfo {
+  padding: 4px;
+  border: 2px dashed darkgreen;
+  display: -ms-grid;
+  display: grid;
+}
+
+.animalHeaderLeft {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+  padding: 4px;
+}
+
+.animalHeaderRight {
+  -ms-grid-row: 1;
+  grid-row: 1;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 8;
+  grid-column: 5/13;
+  padding: 4px;
+}
+
+.animalInfoLeft {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
+  grid-column: 1/8;
+  padding: 4px;
+}
+
+.animalInfoRight {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 8;
+  grid-column: 5/13;
+  padding: 4px;
+}
+
+.animalPicRight {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 9;
+  -ms-grid-column-span: 4;
+  grid-column: 9/13;
+  padding: 4px;
+}
+
+.animalPicLeft {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding: 4px;
+}
+
+#bookmarkText {
+  font-size: small;
+}
+/*# sourceMappingURL=Hobby.css.map */
