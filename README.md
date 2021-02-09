@@ -10,16 +10,18 @@
 1. Credits
 
 ### 1. Description
-A web hosted version of a cv so as to assist in personal marketing for job-hunting. It should host a basic description of myself, my skills and experience.
-It will serve as a tool to communicate the above information in easy to digest format.
+A website that was created over various tasks so as to learn HTML. It serves as a recreation of a booking website and serves
+primarily as a learning page
 
 ### 2. Installation.
 * Download all files and folders to local machine
-* Ensure that HTML file and javascript, style and images folder are all placed in the _same directory_
+* Ensure that HTML all files and javascript, style and images folder are all placed in the _same directory_
 * HTML file should now be ready to be opened.
 
 ### 3. Usage
-Once installation is completed, the webpage can be opened by double clicking the HTML document.
+Once installation is completed, the webpage can be opened by double clicking the _index_ HTML file.
+
+All links to the pages as are indicated on the page itself
 
 ### 4. Credits
 Jaco H Dreyer
